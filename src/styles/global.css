@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Cores baseadas na sua logo */
+  --azul-escuro: #1e3a8a;
+  --azul-medio: #2563eb;
+  --azul-claro: #3b82f6;
+  --vermelho: #dc2626;
+  --dourado: #d4af37;
+  --branco: #ffffff;
+  --cinza-claro: #f8fafc;
+  --cinza-escuro: #374151;
+  
+  /* Tipografia */
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-texto: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  line-height: 1.6;
+  color: var(--cinza-escuro);
+  background-color: var(--branco);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilidades */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: var(--fonte-texto);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--azul-escuro), var(--azul-medio));
+  color: var(--branco);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+}

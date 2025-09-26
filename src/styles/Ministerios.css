@@ -1,0 +1,117 @@
+.ministerios-page {
+  min-height: 100vh;
+}
+
+.ministerios-hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+.ministerios-hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.ministerios-list {
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+.ministerios-grid {
+  display: grid;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ministerio-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.card-header h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.ministerio-descricao {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.ministerio-info {
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+/* RESET DE CORES PARA O INSTAGRAM SECTION */
+.instagram-section a,
+.instagram-section span,
+.instagram-section button {
+  color: initial !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: initial !important;
+  
+}
+
+.instagram-link {
+  color: #2563eb !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.instagram-hashtag {
+  color: #6b7280 !important;
+  font-size: 0.9rem;
+}
+
+.btn-seguir {
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Remove qualquer efeito de transparência */
+.instagram-section * {
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .ministerios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
