@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ADCavallari/static/css/main.28af8df0.css",
+    "main.js": "/ADCavallari/static/js/main.b3309cbd.js",
+    "static/media/imgigreja.jpg": "/ADCavallari/static/media/imgigreja.b3ba43254c4a88fc57b2.jpg",
+    "static/media/logo2.png": "/ADCavallari/static/media/logo2.9476d3651fce0cd6eae3.png",
+    "static/media/colunaslogo.png": "/ADCavallari/static/media/colunaslogo.f147adad16f1308520ed.png",
+    "static/media/joiaslogo.png": "/ADCavallari/static/media/joiaslogo.886834b2e430ef1e2cfc.png",
+    "static/media/jovenslogo.png": "/ADCavallari/static/media/jovenslogo.80ec81a0d3795bdc7f4f.png",
+    "index.html": "/ADCavallari/index.html",
+    "main.28af8df0.css.map": "/ADCavallari/static/css/main.28af8df0.css.map",
+    "main.b3309cbd.js.map": "/ADCavallari/static/js/main.b3309cbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28af8df0.css",
+    "static/js/main.b3309cbd.js"
+  ]
+}

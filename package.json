@@ -1,7 +1,7 @@
 {
   "name": "adcavallari",
   "version": "1.0.0",
-  "description": "Site moderno da Igreja ADCavallari",
+  "description": "Site da AD Cavallari",
   "homepage": "https://toccini.github.io/ADCavallari",
   "scripts": {
     "start": "react-scripts start",
