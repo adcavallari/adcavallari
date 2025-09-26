@@ -1,8 +1,8 @@
 {
-  "name": "adcavallari",
+  "name": "ad-cavallari",
   "version": "1.0.0",
   "description": "Site da AD Cavallari",
-  "homepage": "https://toccini.github.io/ADCavallari",
+  "homepage": "https://adcavallari.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
