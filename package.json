@@ -2,7 +2,7 @@
   "name": "adcavallari",
   "version": "1.0.0",
   "description": "Site da AD Cavallari",
-  "homepage": "https://adcavallari.github.io",
+  "homepage": "https://adcavallari.github.io/home",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
