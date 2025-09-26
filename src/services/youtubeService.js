@@ -124,7 +124,61 @@ class YouTubeService {
         visualizacoes: '131',
         duracaoLegivel: '2:07:55'
       },
-      // ... seus outros vídeos de fallback
+      {
+        id: 'video2', 
+        titulo: 'Congresso de Jovens (Dia 02)',
+        data: '24 Mai 2025',
+        videoId: 'QQc8996nOvM',
+        thumbnail: 'https://img.youtube.com/vi/QQc8996nOvM/hqdefault.jpg',
+        duracao: '2:52:45',
+        visualizacoes: '131',
+        duracaoLegivel: '2:52:45',
+        wasLive: true
+      },
+      {
+        id: 'video3',
+        titulo: 'Culto de Ação de Graça',
+        data: '16 Ago 2025',
+        videoId: '1U0T3ZFEI3w',
+        thumbnail: 'https://img.youtube.com/vi/1U0T3ZFEI3w/hqdefault.jpg',
+        duracao: '3:31:40',
+        visualizacoes: '98',
+        duracaoLegivel: '3:31:40',
+        wasLive: true
+      },
+      {
+        id: 'video4',
+        titulo: 'Congresso Infantil - Dia 02',
+        data: '21 Jun 2025',
+        videoId: 'WFS8EDhs9iw',
+        thumbnail: 'https://img.youtube.com/vi/WFS8EDhs9iw/hqdefault.jpg',
+        duracao: '2:13:30',
+        visualizacoes: '91',
+        duracaoLegivel: '2:13:30',
+        wasLive: true
+      },
+      {
+        id: 'video5',
+        titulo: '14° Aniversário da Igreja | Dia 01',
+        data: '16 Nov 2024',
+        videoId: '4vmylFlIL20',
+        thumbnail: 'https://img.youtube.com/vi/4vmylFlIL20/hqdefault.jpg',
+        duracao: '2:35:25',
+        visualizacoes: '77',
+        duracaoLegivel: '2:35:25',
+        wasLive: true
+      },
+      {
+        id: 'video6',
+        titulo: 'Culto de Missão',
+        data: '14 Set 2025',
+        videoId: 'KOaB1TWnT2w',
+        thumbnail: 'https://img.youtube.com/vi/KOaB1TWnT2w/hqdefault.jpg',
+        duracao: '2:26:40',
+        visualizacoes: '94',
+        duracaoLegivel: '2:26:40',
+        wasLive: true
+      }
     ];
   }
 }

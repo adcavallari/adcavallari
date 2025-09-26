@@ -15,6 +15,13 @@
   margin-bottom: 1rem;
 }
 
+.ministerios-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .ministerios-list {
   padding: 60px 0;
   background: #f8fafc;
@@ -22,9 +29,11 @@
 
 .ministerios-grid {
   display: grid;
-  gap: 3rem;
-  max-width: 1000px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .ministerio-card {
@@ -32,86 +41,287 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ministerio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .card-header {
   padding: 2rem;
   color: white;
   text-align: center;
+  position: relative;
 }
 
 .card-header h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  margin: 0;
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ministerios-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  background: white;
+}
+
+.ministerios-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content {
-  padding: 2rem;
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .ministerio-descricao {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #374151;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .ministerio-info {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .info-item {
   display: flex;
-  justify-content: space-between;
+  align-items: center; /* Alinha verticalmente */
+  gap: 0px; /* Espaço entre label e valor */
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item:last-child {
+  border-bottom: none;
 }
 
 .info-label {
-  font-weight: 600;
+  font-weight: 1000;
   color: #1e3a8a;
+  font-size: 20px;
+  min-width: 60px; /* Largura fixa para alinhar */
 }
 
-/* RESET DE CORES PARA O INSTAGRAM SECTION */
-.instagram-section a,
-.instagram-section span,
-.instagram-section button {
-  color: initial !important;
-  opacity: 1 !important;
-  -webkit-text-fill-color: initial !important;
-  
+.info-item span:last-child {
+  color: #374151;
+  font-size: 0.9rem;
+  flex: 1; /* Ocupa o espaço restante */
+}
+
+/* Instagram Section - ESTILO IGUAL AO CONTATO */
+.instagram-section {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: auto; /* Empurra para baixo */
+}
+
+.instagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza */
+  gap: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.instagram-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza */
 }
 
 .instagram-link {
   color: #2563eb !important;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+  color: #1e3a8a !important;
+  text-decoration: underline;
 }
 
 .instagram-hashtag {
   color: #6b7280 !important;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin-top: 2px;
 }
 
+/* BOTÃO ESTILO REDES SOCIAIS (igual ao contato) */
 .btn-seguir {
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #E1306C, #C13584);
   color: white !important;
+  border: none;
+  border-radius: 8px;
   font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none !important;
 }
 
-/* Remove qualquer efeito de transparência */
-.instagram-section * {
-  opacity: 1 !important;
+.btn-seguir:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(225, 48, 108, 0.3);
+  background: linear-gradient(135deg, #C13584, #E1306C);
 }
 
+/* SVG do Instagram corrigido */
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.redes-sociais-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.redes-sociais-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.redes-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1rem !important;
+}
+
+.rede-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #374151;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.rede-social-link:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+  border-color: #1e3a8a;
+}
+
+.rede-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tablet - 2 colunas */
+@media (max-width: 1024px) {
+  .ministerios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile - 1 coluna */
 @media (max-width: 768px) {
+  .ministerios-hero {
+    padding: 100px 0 40px;
+  }
+  
+  .ministerios-hero h1 {
+    font-size: 2.2rem;
+  }
+  
   .ministerios-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 15px;
+  }
+  
+  .card-header {
+    padding: 1.5rem;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-header h3 {
+    font-size: 1.5rem;
   }
   
   .info-item {
     flex-direction: column;
     gap: 0.3rem;
+    text-align: center;
+  }
+  
+  .info-item span:last-child {
+    text-align: center;
+  }
+  
+  .instagram-header {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ministerios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-header {
+    padding: 1rem;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .ministerios-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .ministerio-descricao {
+    font-size: 0.9rem;
   }
 }

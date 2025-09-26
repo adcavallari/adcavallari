@@ -237,7 +237,7 @@ const Transmissoes = () => {
       <section className="cultos-anteriores">
         <div className="container">
           <h2>Cultos Anteriores</h2>
-          <p className="section-subtitle">Assista às gravações dos nossos últimos cultos</p>
+          <p className="section-subtitle">Assista às gravações dos nossos últimos cultos</p><br></br>
           
           {error && (
             <div className="error-message">

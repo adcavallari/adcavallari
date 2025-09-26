@@ -34,13 +34,27 @@
   flex-wrap: wrap;
 }
 
-.btn-secondary {
+.hero-buttons .btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+}
+
+/* Debug visual */
+.hero-buttons .btn:hover {
+  background: #2563eb !important; /* Para ver se está respondendo */
+  color: white;
+  transform: scale(1.1) !important;
+}
+
+.btn-map {
   background: transparent;
   color: var(--branco);
   border: 2px solid var(--branco);
 }
 
-.btn-secondary:hover {
+.btn-map:hover {
   background: var(--branco);
   color: var(--azul-escuro);
 }
@@ -98,92 +112,201 @@
   font-size: 1rem;
 }
 
+.about-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
 .about-image {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .image-placeholder {
   width: 100%;
-  height: 300px;
-  background: linear-gradient(135deg, var(--azul-claro), var(--azul-medio));
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--branco);
-  font-size: 1.5rem;
-  font-weight: 600;
+  max-width: 500px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 25px 50px rgba(30, 58, 138, 0.2),
+    0 0 0 4px #2563eb,
+    0 0 0 8px rgba(37, 99, 235, 0.1);
+  border: 3px solid white;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-/* Ministérios Preview */
-.ministerios-preview {
-  padding: 80px 0;
-  background: var(--branco);
+.image-placeholder:hover {
+  box-shadow: 
+    0 30px 60px rgba(30, 58, 138, 0.3),
+    0 0 0 4px #2563eb,
+    0 0 0 10px rgba(37, 99, 235, 0.15);
+  transform: translateY(-5px);
 }
 
-.ministerios-preview h2 {
-  font-family: var(--fonte-titulo);
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.image-placeholder:hover img {
+  transform: scale(1.05);
+}
+.about-text h2 {
+  color: #1e3a8a;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  color: var(--azul-escuro);
-  text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.ministerios-preview > .container > p {
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.ministerios-section {
+  padding: 60px 0;
+  background: #f8fafc;
+}
+
+.ministerios-header {
   text-align: center;
-  font-size: 1.2rem;
-  color: var(--cinza-escuro);
   margin-bottom: 3rem;
+}
+
+.ministerios-header h2 {
+  color: #1e3a8a; /* Azul dos h2 da home */
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  
+}
+
+.ministerios-header p {
+  color: #6b7280;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .ministerios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+/* Espaçamento antes do footer */
+.ministerios-section + footer {
+  margin-top: 60px;
 }
 
 .ministerio-preview {
-  background: var(--branco);
+  background: white;
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid transparent;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  border-left: 4px solid #2563eb;
 }
 
 .ministerio-preview:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: var(--azul-claro);
 }
 
-.ministerio-emoji {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
+.ministerios-image{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.ministerio-preview h3 {
-  color: var(--azul-escuro);
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.ministerio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.ministerio-preview p {
-  color: var(--cinza-escuro);
-  margin-bottom: 1rem;
-  line-height: 1.6;
+.ministerio-buttons a {
+  text-decoration: none !important;
 }
 
-.ministerio-instagram {
-  color: var(--azul-medio);
-  font-weight: 600;
-  font-size: 0.9rem;
+.ministerio-buttons {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  background: rgb(223, 223, 223);
+  color: #374151;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #1e3a8a;
+  color: white;
+  box-shadow: 0 5px 15px rgba(30, 58, 138, 0.3);
+}
+
+.btn-secondary {
+  background: rgb(223, 223, 223);
+  border-color: #374151;
+  color: #374151;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-secondary:hover {
+  background: #1e3a8a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(30, 58, 138, 0.3);
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 3rem;
+  }
+  
+  .image-placeholder {
+    max-width: 400px;
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 100px 0 60px;
@@ -208,5 +331,32 @@
 
   .ministerios-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .ministerio-buttons {
+    flex-direction: column;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    max-width: 100%;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-placeholder {
+    height: 200px;
+    border-width: 5px;
   }
 }

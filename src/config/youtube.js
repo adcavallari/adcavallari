@@ -1,11 +1,13 @@
 // Configuração segura para YouTube API
 const config = {
   youtube: {
-    apiKey: process.env.REACT_APP_YOUTUBE_API_KEY || 'AIzaSyBAwcYfyhT8lwQg8Fz1GSVUqC-hjFZHFFI', 
+    apiKey: process.env.REACT_APP_YOUTUBE_API_KEY, 
     channelId: process.env.REACT_APP_YOUTUBE_CHANNEL_ID || 'UCd76-d5_7f3EXAqIc4hEK0A',
     baseUrl: 'https://www.googleapis.com/youtube/v3'
   }
 };
+
+console.log('API Key:', process.env.REACT_APP_YOUTUBE_API_KEY);
 
 // Debug seguro
 console.log('🎯 YouTube Config:', {

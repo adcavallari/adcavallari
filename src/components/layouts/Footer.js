@@ -69,7 +69,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contato</h4>
             <div className="contact-info">
-              <p>📞 (11) 99999-9999</p>
+              <p>📞 (14) 99999-9999</p>
               <p>📧 ad.cavallri@gmail.com</p>
               <p>📍 Av. Maria Fernandes Cavallari 2399 - Marília SP</p>
             </div>

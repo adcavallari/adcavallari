@@ -1,37 +1,44 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../../styles/Header.css';
-import logo from '../../assets/logo2.png'
+import logo from '../../assets/logo2.png';
 
-const Header = ({ currentPage, setCurrentPage }) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navigationItems = [
-    { id: 'home', label: 'Início' },
-    { id: 'transmissoes', label: 'Transmissões' },
-    { id: 'ministerios', label: 'Ministérios' },
-    { id: 'contato', label: 'Contato' }
+    { path: '/', label: 'Início' },
+    { path: '/transmissoes', label: 'Transmissões' },
+    { path: '/ministerios', label: 'Ministérios' },
+    { path: '/contato', label: 'Contato' }
   ];
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <header className="header">
       <div className="container">
         <div className="header-content">
-          {/* Logo com imagem */}
+          {/* Logo com imagem - CORRIGIDO */}
           <div className="logo">
-            <img src={logo} alt="AD Cavallari" className="logo-image" />
-            <span className="logo-text">AD CAVALLARI</span>
+            <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+              <img src={logo} alt="AD Cavallari" className="logo-image" />
+              <span className="logo-text">AD CAVALLARI</span>
+            </Link>
           </div>
 
           {/* Navigation Desktop */}
           <nav className="nav-desktop">
             {navigationItems.map(item => (
-              <button
-                key={item.id}
-                className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
-                onClick={() => setCurrentPage(item.id)}
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
+                style={{ textDecoration: 'none' }}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </nav>
 
@@ -49,16 +56,15 @@ const Header = ({ currentPage, setCurrentPage }) => {
         {/* Mobile Navigation */}
         <nav className={`nav-mobile ${isMenuOpen ? 'open' : ''}`}>
           {navigationItems.map(item => (
-            <button
-              key={item.id}
-              className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
-              onClick={() => {
-                setCurrentPage(item.id);
-                setIsMenuOpen(false);
-              }}
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
+              onClick={() => setIsMenuOpen(false)}
+              style={{ textDecoration: 'none' }}
             >
               {item.label}
-            </button>
+            </Link>
           ))}
         </nav>
       </div>

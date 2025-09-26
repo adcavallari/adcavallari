@@ -43,3 +43,34 @@
   margin: 0 auto 30px;
   opacity: 0.9;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-primary, .btn-secondary {
+  text-decoration: none !important;
+}
+
+.ministerio-buttons a {
+  text-decoration: none !important;
+  display: inline-block;
+  width: 100%;
+}
+
+.hero-buttons a {
+  text-decoration: none !important;
+}
