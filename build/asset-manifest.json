@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.28af8df0.css",
-    "main.js": "/home/static/js/main.d24ac08a.js",
-    "static/media/imgigreja.jpg": "/home/static/media/imgigreja.b3ba43254c4a88fc57b2.jpg",
-    "static/media/logo2.png": "/home/static/media/logo2.9476d3651fce0cd6eae3.png",
-    "static/media/colunaslogo.png": "/home/static/media/colunaslogo.f147adad16f1308520ed.png",
-    "static/media/joiaslogo.png": "/home/static/media/joiaslogo.886834b2e430ef1e2cfc.png",
-    "static/media/jovenslogo.png": "/home/static/media/jovenslogo.80ec81a0d3795bdc7f4f.png",
-    "index.html": "/home/index.html",
-    "main.28af8df0.css.map": "/home/static/css/main.28af8df0.css.map",
-    "main.d24ac08a.js.map": "/home/static/js/main.d24ac08a.js.map"
+    "main.css": "/static/css/main.28af8df0.css",
+    "main.js": "/static/js/main.2bc98ec3.js",
+    "static/media/imgigreja.jpg": "/static/media/imgigreja.b3ba43254c4a88fc57b2.jpg",
+    "static/media/logo2.png": "/static/media/logo2.9476d3651fce0cd6eae3.png",
+    "static/media/colunaslogo.png": "/static/media/colunaslogo.f147adad16f1308520ed.png",
+    "static/media/joiaslogo.png": "/static/media/joiaslogo.886834b2e430ef1e2cfc.png",
+    "static/media/jovenslogo.png": "/static/media/jovenslogo.80ec81a0d3795bdc7f4f.png",
+    "index.html": "/index.html",
+    "main.28af8df0.css.map": "/static/css/main.28af8df0.css.map",
+    "main.2bc98ec3.js.map": "/static/js/main.2bc98ec3.js.map"
   },
   "entrypoints": [
     "static/css/main.28af8df0.css",
-    "static/js/main.d24ac08a.js"
+    "static/js/main.2bc98ec3.js"
   ]
 }

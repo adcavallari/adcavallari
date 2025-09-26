@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom'; // ← CORRIGIDO
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
 import Home from './pages/Home';
@@ -10,7 +10,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter> {/* ← AGORA ESTÁ DEFINIDO */}
       <div className="App">
         <Header />
         <main className="main-content">
@@ -19,7 +19,6 @@ function App() {
             <Route path="/ministerios" element={<Ministerios />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/transmissoes" element={<Transmissoes />} />
-            {/* Redireciona qualquer rota não encontrada para home */}
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
